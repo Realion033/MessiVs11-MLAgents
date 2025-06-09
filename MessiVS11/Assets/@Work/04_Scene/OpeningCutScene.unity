@@ -850,6 +850,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 11137378}
+  - {fileID: 1864338652}
   m_Father: {fileID: 6532072340125995018}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &898962332
@@ -1045,6 +1046,10 @@ PlayableDirector:
     value: {fileID: 5903451118765935280}
   - key: {fileID: -492869501143457404, guid: f29f52e363dbbec448cc2e60e8d91018, type: 2}
     value: {fileID: 1976082690}
+  - key: {fileID: 7158991051569607742, guid: f29f52e363dbbec448cc2e60e8d91018, type: 2}
+    value: {fileID: 7856897586204139440}
+  - key: {fileID: 1011906080305251721, guid: f29f52e363dbbec448cc2e60e8d91018, type: 2}
+    value: {fileID: 797078046}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &1248062218
@@ -1442,11 +1447,11 @@ Transform:
   m_GameObject: {fileID: 1864338651}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -2.4999998, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6532072340125995018}
+  m_Father: {fileID: 797078047}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!199 &1864338653
 ParticleSystemRenderer:
@@ -7669,13 +7674,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
-    are already bound by a Humanoid avatar. These transforms can only be changed
-    by Humanoid clips.\n\tTransform 'mixamorig:LeftFoot'\n\tTransform 'mixamorig:LeftHandThumb2'\n\tTransform
-    'mixamorig:LeftHandIndex1'\n\tTransform 'mixamorig:LeftHandPinky2'\n\tTransform
-    'mixamorig:RightHandRing2'\n\tTransform 'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform
-    'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform 'mixamorig:LeftLeg'\n\tand
-    more ..."
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
@@ -8453,6 +8452,7 @@ GameObject:
   - component: {fileID: 6532072340125995018}
   - component: {fileID: 7856897586204139439}
   - component: {fileID: 5399175985713294181}
+  - component: {fileID: 7856897586204139440}
   m_Layer: 0
   m_Name: UFO_Color1
   m_TagString: Untagged
@@ -8612,7 +8612,6 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1864338652}
   - {fileID: 5180323137369330460}
   - {fileID: 8531612605158034721}
   - {fileID: 797078047}
@@ -8963,6 +8962,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5903451118765935280}
   m_Mesh: {fileID: 8547471881871753710, guid: 55a7154760840453cbf09a19f950e2f8, type: 3}
+--- !u!95 &7856897586204139440
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5903451118765935280}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7877800321489253346
 GameObject:
   m_ObjectHideFlags: 0

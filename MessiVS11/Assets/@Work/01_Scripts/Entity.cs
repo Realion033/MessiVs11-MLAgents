@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Entity : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [Header("Entity Stats")]
+    public float maxHealth;
+    public string entityName;
 
-    // Update is called once per frame
-    void Update()
+    protected float currentHealth;
+
+    void Awake()
     {
-        
+        Initialize();
+    }
+    
+    public virtual void Initialize()
+    {
+        currentHealth = maxHealth;
     }
 }

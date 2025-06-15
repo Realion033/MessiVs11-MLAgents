@@ -2,17 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : Entity
 {
-    // Start is called before the first frame update
-    void Start()
+    private PlayerStateMachine _playerStateMachine;
+
+    void Awake()
     {
-        
+        _playerStateMachine = new PlayerStateMachine(this);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

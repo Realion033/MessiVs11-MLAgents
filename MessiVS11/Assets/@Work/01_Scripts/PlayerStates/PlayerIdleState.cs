@@ -11,15 +11,18 @@ public class PlayerIdleState : EntityBaseState
     public override void Enter()
     {
         base.Enter();
+        Debug.Log("Enter");
     }
 
     public override void Update()
     {
         base.Update();
+        Debug.Log("Update");
     }
 
     public override void Exit()
     {
         base.Exit();
+        Debug.Log("Exit");
     }
 }

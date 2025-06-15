@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class EntityBaseState
+public abstract class EntityBaseState : MonoBehaviour
 {
     protected Entity _entity;
     

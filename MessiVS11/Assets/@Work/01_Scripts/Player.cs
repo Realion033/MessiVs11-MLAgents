@@ -11,5 +11,8 @@ public class Player : Entity
         _playerStateMachine = new PlayerStateMachine(this);
     }
 
-    
+    void Update()
+    {
+        _playerStateMachine.Update();
+    }
 }

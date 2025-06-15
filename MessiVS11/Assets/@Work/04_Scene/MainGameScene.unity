@@ -344,7 +344,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 5000
-  field of view: 60
+  field of view: 90
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -371,7 +371,7 @@ Transform:
   m_GameObject: {fileID: 1970183234}
   serializedVersion: 2
   m_LocalRotation: {x: 0.2588191, y: -0, z: -0, w: 0.9659258}
-  m_LocalPosition: {x: 0.5, y: 2, z: -2}
+  m_LocalPosition: {x: 1, y: 2, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -579,6 +579,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6479424221987094904}
   - component: {fileID: 8286244455412150806}
+  - component: {fileID: 8286244455412150807}
   m_Layer: 0
   m_Name: Visual
   m_TagString: Untagged
@@ -1622,6 +1623,7 @@ GameObject:
   - component: {fileID: 1909540736420828530}
   - component: {fileID: 4440253099177544658}
   - component: {fileID: 5785163842127471932}
+  - component: {fileID: 5785163842127471933}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1641,8 +1643,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5ca901ca3342bf408f4f0eb26ec4705, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 0
-  entityName: 
+  maxHealth: 100
+  entityName: Messi
+--- !u!114 &5785163842127471933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5785163842127471931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4ae91d2e44a03e4da7ade034a67f901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &5855222963988713589
 Transform:
   m_ObjectHideFlags: 0
@@ -2525,6 +2539,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8286244455412150807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174513245950247457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d69c80e3d7151294c80b508fbffb00d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8341033405601750497
 Transform:
   m_ObjectHideFlags: 0
